@@ -1,0 +1,13 @@
+<resources>
+
+    <string name="app_name">MediaLabPttDownload</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Lab421 PPT Download</string>
+    <string name="username">username</string>
+    <string name="login_dialog_title">Login to media.ee.ntu.edu.tw:80</string>
+    <string name="password">password</string>
+    <string name="login">login</string>
+    <string name="login_error">Login Failed</string>
+
+</resources>
