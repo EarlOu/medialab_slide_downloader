@@ -1,5 +1,4 @@
 <resources>
-
     <string name="app_name">MediaLabPttDownload</string>
     <string name="hello_world">Hello world!</string>
     <string name="menu_settings">Settings</string>
@@ -9,5 +8,30 @@
     <string name="password">password</string>
     <string name="login">login</string>
     <string name="login_error">Login Failed</string>
-
+    <string name="network_error">Network Error</string>
+    <string name="retry">Retry</string>
+    <string name="reporter">Reporter</string>
+    <string name="type">Type</string>
+    <string name="title">Title</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="keyword">Keyword</string>
+    <string name="number_of_result">Number of result</string>
+    <string name="search">Search</string>
+    <string name="submit">Submit</string>
+    <string-array name="present_types">
+        <item>All</item>
+        <item>Survey</item>
+        <item>Research</item>
+        <item>What I Saw</item>
+        <item>Thesis</item>
+        <item>Other</item>
+    </string-array>
+    <string name="no_data">No data</string>
+    <string name="download_to">Download to</string>
+    <string name="ok">ok</string>
+    <string name="storage_not_available">The storage is not available now.</string>
+    <string name="downloading">Downloading</string>
+    <string name="error_when_download">Download failed</string>
+    <string name="no_reader">No document reader in this phone.</string>
 </resources>

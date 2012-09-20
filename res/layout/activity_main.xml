@@ -1,12 +1,21 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world"
-        tools:context=".MainActivity" />
-
-</LinearLayout>
+    <Button android:id="@+id/search"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search"
+            android:onClick="search"
+            android:layout_alignParentBottom="true"/>
+    <ListView android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/search"/>
+    <TextView android:id="@android:id/empty"
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/no_data"/>  
+</RelativeLayout>
