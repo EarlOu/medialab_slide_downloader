@@ -308,7 +308,7 @@ public class MainActivity extends ListActivity {
         mSearchDialog.show();
     }
 
-    private long convertToUnixTime(DatePicker picker) {
+    static private long convertToUnixTime(DatePicker picker) {
         Calendar c = Calendar.getInstance();
         c.set(Calendar.YEAR, picker.getYear());
         c.set(Calendar.MONTH, picker.getMonth());
