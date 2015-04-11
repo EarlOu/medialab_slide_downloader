@@ -102,7 +102,6 @@ public class MainActivity extends ListActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_main);
         mPresentType = getResources().getStringArray(R.array.present_types);
         buildLoginDialog();
@@ -342,20 +341,20 @@ public class MainActivity extends ListActivity {
             if (convertView == null) {
                 LayoutInflater inflater =
                         (LayoutInflater) getSystemService(LAYOUT_INFLATER_SERVICE);
-                View view = inflater.inflate(R.layout.item, null);
-                view.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,
+                convertView = inflater.inflate(R.layout.item, null);
+                convertView.setLayoutParams(new LayoutParams(LayoutParams.FILL_PARENT,
                         LayoutParams.WRAP_CONTENT));
-                Item item = getItem(position);
-                TextView titleView = (TextView) view.findViewById(R.id.title);
-                TextView typeView = (TextView) view.findViewById(R.id.type);
-                TextView presenterView = (TextView) view.findViewById(R.id.presenter);
-                TextView dateView = (TextView) view.findViewById(R.id.date);
-                titleView.setText(item.title);
-                typeView.setText(TYPE + item.type);
-                presenterView.setText(PRESENTER + item.presenter);
-                dateView.setText(DATE + item.time);
-                convertView = view;
             }
+
+            Item item = getItem(position);
+            TextView titleView = (TextView) convertView.findViewById(R.id.title);
+            TextView typeView = (TextView) convertView.findViewById(R.id.type);
+            TextView presenterView = (TextView) convertView.findViewById(R.id.presenter);
+            TextView dateView = (TextView) convertView.findViewById(R.id.date);
+            titleView.setText(item.title);
+            typeView.setText(TYPE + item.type);
+            presenterView.setText(PRESENTER + item.presenter);
+            dateView.setText(DATE + item.time);
             return convertView;
         }
     }
