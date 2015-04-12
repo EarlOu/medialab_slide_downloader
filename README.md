@@ -1,3 +1,2 @@
 # medialab_slide_downloader
-Group meeting slide downloader for media lab 421
-See http://media.ee.ntu.edu.tw/memonly/#nevigator
+Group meeting slides downloader for Media IC & System Lab, National Taiwan University. See http://media.ee.ntu.edu.tw/memonly/#nevigator
